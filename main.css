@@ -1,3 +1,33 @@
 li {
   max-width: 50ch !important;
 }
+/* Nastavenie samotného odkazu */
+.tooltip-link {
+  position: relative;
+  text-decoration: underline;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Skrytý tooltip, ktorý sa vytvorí cez CSS */
+.tooltip-link::after {
+  content: attr(data-tooltip); /* Zoberie text z data-tooltip */
+  position: absolute;
+  bottom: 125%; /* Zobrazí sa nad odkazom */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out; /* Plynulé zobrazenie */
+}
+
+/* Zobrazenie tooltipu pri hoveri */
+.tooltip-link:hover::after {
+  opacity: 1;
+}
