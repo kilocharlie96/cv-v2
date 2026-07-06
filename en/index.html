@@ -31,315 +31,336 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../main.css" />
   </head>
 
   <body>
-    <header>
-      <section class="hero is-link is-medium">
-        <div class="hero-head">
-          <div class="container navbar">
-            <div class="navbar-end p-4">
-              <div class="navbar-item">
+    <div id="app">
+      <header>
+        <section class="hero is-link is-medium">
+          <div class="hero-head">
+            <div class="container navbar">
+              <div class="navbar-start p-4">
+                <div class="dropdown">
+                  <div class="dropdown-trigger">
+                    <button
+                      class="button is-small is-light is-outlined"
+                      aria-haspopup="true"
+                      aria-controls="dropdown-menu is-small"
+                    >
+                      <span class="icon is-small">
+                        <i class="fas fa-globe"></i>
+                      </span>
+                      <span>EN</span>
+                      <span class="icon is-small arrow-icon">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a href="../" class="dropdown-item">Slovensky (SK) </a>
+                      <a href="#" class="dropdown-item is-active">
+                        English (EN)
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <h1 class="title is-1">Kristián Černák</h1>
+              <h2 class="subtitle is-3">Full-Stack Developer</h2>
+
+              <div class="buttons is-justify-content-center mt-4">
                 <a
-                  href="../"
-                  class="button is-small is-light is-outlined"
-                  hreflang="en"
+                  href="mailto:cernak.kiko@gmail.com"
+                  class="button is-link is-inverted is-outlined"
+                  aria-label="send email"
                 >
-                  <span class="icon is-small">
-                    <i class="fa-solid fa-arrows-rotate"></i>
+                  <span class="icon"><i class="fas fa-envelope"></i></span>
+                  <span>cernak.kiko@gmail.com</span>
+                </a>
+
+                <a
+                  href="tel:+421908606014"
+                  class="button is-link is-inverted is-outlined"
+                  aria-label="make a call"
+                >
+                  <span class="icon"><i class="fas fa-phone"></i></span>
+                  <span>+421 908 606 014</span>
+                </a>
+
+                <a
+                  href="https://github.com/kilocharlie96/"
+                  class="button is-link is-inverted is-outlined"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="visit github"
+                >
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="../assets/CV_KristianCernak_EN.pdf"
+                  class="button is-link is-inverted is-outlined"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="download cv"
+                >
+                  <span class="icon">
+                    <i class="fas fa-download" aria-hidden="true"></i>
                   </span>
-                  <span>SK</span>
+                  <span>Open CV in PDF</span>
                 </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title is-1">Kristián Černák</h1>
-            <h2 class="subtitle is-3">Full-Stack Developer</h2>
+        </section>
+      </header>
 
-            <div class="buttons is-justify-content-center mt-4">
-              <a
-                href="mailto:cernak.kiko@gmail.com"
-                class="button is-link is-inverted is-outlined"
-                aria-label="send email"
-              >
-                <span class="icon"><i class="fas fa-envelope"></i></span>
-                <span>cernak.kiko@gmail.com</span>
-              </a>
-
-              <a
-                href="tel:+421908606014"
-                class="button is-link is-inverted is-outlined"
-                aria-label="make a call"
-              >
-                <span class="icon"><i class="fas fa-phone"></i></span>
-                <span>+421 908 606 014</span>
-              </a>
-
-              <a
-                href="https://github.com/kilocharlie96/"
-                class="button is-link is-inverted is-outlined"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="visit github"
-              >
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>GitHub</span>
-              </a>
-
-              <a
-                href="../assets/CV_KristianCernak_EN.pdf"
-                class="button is-link is-inverted is-outlined"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="download cv"
-              >
-                <span class="icon">
-                  <i class="fas fa-download" aria-hidden="true"></i>
-                </span>
-                <span>Open CV in PDF</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <section class="section">
-        <div class="container">
-          <div class="columns is-desktop">
-            <div class="column is-one-third-desktop">
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4 pb-2 bd-bottom">
-                    <i class="fas fa-user mr-2 text-primary"></i>About me
-                  </h3>
-                  <p class="content pr-5 pl-5 pb-4">
-                    I am a web developer with hands-on experience from
-                    real-world projects. Development is my passion, to which I
-                    dedicate my free time. I write clean, responsive code and
-                    quickly adapt to new technologies.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4 pb-2">
-                    <i class="fas fa-tools mr-2"></i>Skills
-                  </h3>
-
-                  <div class="mb-3">
-                    <span class="tag is-link is-light m-1">Vue.js</span>
-                    <span class="tag is-link is-light m-1"
-                      >JavaScript (ES6)</span
-                    >
-                    <span class="tag is-link is-light m-1">HTML5 / CSS3</span>
-                    <span class="tag is-link is-light m-1">Bulma CSS</span>
-                    <span class="tag is-link is-light m-1">PHP</span>
-                    <span class="tag is-link is-light m-1">Laravel</span>
-                    <span class="tag is-link is-light m-1">Java</span>
-                    <span class="tag is-link is-light m-1">SpringBoot</span>
-                    <span class="tag is-link is-light m-1">MySQL</span>
-                    <span class="tag is-link is-light m-1">Linux/Unix</span>
-                    <span class="tag is-link is-light m-1">Git</span>
-                    <span class="tag is-link is-light m-1">REST API</span>
-                    <span class="tag is-link is-light m-1">JSON</span>
-                    <span class="tag is-link is-light m-1">Jira</span>
-                    <span class="tag is-link is-light m-1">Confluence</span>
-                  </div>
-
-                  <hr />
-
-                  <h4 class="subtitle is-5 mb-2">Languages</h4>
-                  <div class="field">
-                    <label class="label is-small mb-1">Slovak (Native)</label>
-                    <progress
-                      class="progress is-link is-small"
-                      value="100"
-                      max="100"
-                    >
-                      100%
-                    </progress>
-                  </div>
-                  <div class="field">
-                    <label class="label is-small mb-1">English (B2)</label>
-                    <progress
-                      class="progress is-link is-small"
-                      value="65"
-                      max="100"
-                    >
-                      65%
-                    </progress>
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="columns is-desktop">
+              <div class="column is-one-third-desktop">
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4 pb-2 bd-bottom">
+                      <i class="fas fa-user mr-2 text-primary"></i>About me
+                    </h3>
+                    <p class="content pr-5 pl-5 pb-4">
+                      I am a web developer with hands-on experience from
+                      real-world projects. Development is my passion, to which I
+                      dedicate my free time. I write clean, responsive code and
+                      quickly adapt to new technologies.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="column is-7-desktop">
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4">
-                    <i class="fas fa-briefcase mr-2"></i> Work experience
-                  </h3>
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4 pb-2">
+                      <i class="fas fa-tools mr-2"></i>Skills
+                    </h3>
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">CNC Programmer</h4>
-                      <span class="tag is-info is-light">2025 - Present</span>
+                    <div class="mb-3">
+                      <span class="tag is-link is-light m-1">Vue.js</span>
+                      <span class="tag is-link is-light m-1"
+                        >JavaScript (ES6)</span
+                      >
+                      <span class="tag is-link is-light m-1">HTML5 / CSS3</span>
+                      <span class="tag is-link is-light m-1">Bulma CSS</span>
+                      <span class="tag is-link is-light m-1">PHP</span>
+                      <span class="tag is-link is-light m-1">Laravel</span>
+                      <span class="tag is-link is-light m-1">Java</span>
+                      <span class="tag is-link is-light m-1">SpringBoot</span>
+                      <span class="tag is-link is-light m-1">MySQL</span>
+                      <span class="tag is-link is-light m-1">Linux/Unix</span>
+                      <span class="tag is-link is-light m-1">Git</span>
+                      <span class="tag is-link is-light m-1">REST API</span>
+                      <span class="tag is-link is-light m-1">JSON</span>
+                      <span class="tag is-link is-light m-1">Jira</span>
+                      <span class="tag is-link is-light m-1">Confluence</span>
                     </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">
-                      MATADOR Automotive Vráble, a.s.
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Program CNC machines according to technical
-                          documentation and engineering drawings
-                        </li>
-                        <li>
-                          Lead a small team of programmers and closely
-                          collaborate with the production department
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">Frontend developer</h4>
-                      <span class="tag is-info is-light">2023 - 2024</span>
-                    </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">Freelancer</h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Develop web & e-shop solutions using HTML, CSS,
-                          Vue.js, and HTMX
-                        </li>
-                        <li>Work with REST APIs, JSON format, and Linux</li>
-                        <li>
-                          Create graphic design & asset in Canva and Inkscape
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                    <hr />
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">
-                        Backend Developer (Internship)
-                      </h4>
-                      <span class="tag is-info is-light">2023 - 2023</span>
+                    <h4 class="subtitle is-5 mb-2">Languages</h4>
+                    <div class="field">
+                      <label class="label is-small mb-1">Slovak (Native)</label>
+                      <progress
+                        class="progress is-link is-small"
+                        value="100"
+                        max="100"
+                      >
+                        100%
+                      </progress>
                     </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">
-                      UNIQA Group Service Center Slovakia, spol. s r.o.
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Develop a Model-Driven MS PowerApps Applications
-                          within an agile SCRUM team
-                        </li>
-                        <li>CRUD operations with SharePoint Databases</li>
-                        <li>
-                          Collaborate with a team of developers and QA testers
-                        </li>
-                        <li>Create and maintain documentation in Confluence</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">Aircraft Mechanic</h4>
-                      <span class="tag is-info is-light">2018 - 2022</span>
-                    </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">
-                      Austrian Airlines Technik - Bratislava, s.r.o.
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Perform repairs on aircraft composite parts according
-                          to prescribed manuals
-                        </li>
-                        <li>
-                          Maintain detailed documentation of all completed
-                          repairs
-                        </li>
-                        <li>
-                          Collaborate and participate in meetings with
-                          cross-functional teams
-                        </li>
-                      </ul>
+                    <div class="field">
+                      <label class="label is-small mb-1">English (B2)</label>
+                      <progress
+                        class="progress is-link is-small"
+                        value="65"
+                        max="100"
+                      >
+                        65%
+                      </progress>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4">
-                    <i class="fas fa-graduation-cap mr-2"></i>Education
-                  </h3>
+              <div class="column is-7-desktop">
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4">
+                      <i class="fas fa-briefcase mr-2"></i> Work experience
+                    </h3>
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">Mechatronics</h4>
-                      <span class="tag is-info is-light">2011 - 2016</span>
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">CNC Programmer</h4>
+                        <span class="tag is-info is-light">2025 - Present</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        MATADOR Automotive Vráble, a.s.
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Program CNC machines according to technical
+                            documentation and engineering drawings
+                          </li>
+                          <li>
+                            Lead a small team of programmers and closely
+                            collaborate with the production department
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-0">
-                      Secondary Technical School, Nitrianska 61, Šurany
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>CNC machine programming</li>
-                        <li>Microprocessor programming</li>
-                        <li>Technical drawing</li>
-                        <li>
-                          Electrical engineering focused on high- and
-                          low-voltage systems
-                        </li>
-                      </ul>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">Frontend developer</h4>
+                        <span class="tag is-info is-light">2023 - 2024</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        Freelancer
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Develop web & e-shop solutions using HTML, CSS,
+                            Vue.js, and HTMX
+                          </li>
+                          <li>Work with REST APIs, JSON format, and Linux</li>
+                          <li>
+                            Create graphic design & asset in Canva and Inkscape
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">
+                          Backend Developer (Internship)
+                        </h4>
+                        <span class="tag is-info is-light">2023 - 2023</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        UNIQA Group Service Center Slovakia, spol. s r.o.
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Develop a Model-Driven MS PowerApps Applications
+                            within an agile SCRUM team
+                          </li>
+                          <li>CRUD operations with SharePoint Databases</li>
+                          <li>
+                            Collaborate with a team of developers and QA testers
+                          </li>
+                          <li>
+                            Create and maintain documentation in Confluence
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">Aircraft Mechanic</h4>
+                        <span class="tag is-info is-light">2018 - 2022</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        Austrian Airlines Technik - Bratislava, s.r.o.
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Perform repairs on aircraft composite parts
+                            according to prescribed manuals
+                          </li>
+                          <li>
+                            Maintain detailed documentation of all completed
+                            repairs
+                          </li>
+                          <li>
+                            Collaborate and participate in meetings with
+                            cross-functional teams
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4">
+                      <i class="fas fa-graduation-cap mr-2"></i>Education
+                    </h3>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">Mechatronics</h4>
+                        <span class="tag is-info is-light">2011 - 2016</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-0">
+                        Secondary Technical School, Nitrianska 61, Šurany
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>CNC machine programming</li>
+                          <li>Microprocessor programming</li>
+                          <li>Technical drawing</li>
+                          <li>
+                            Electrical engineering focused on high- and
+                            low-voltage systems
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="footer has-text-centered py-5">
-      <div class="container has-text-grey is-size-7">
-        <p>&copy; 2026 Kristián Černák.</p>
-        <p>
-          Created by
-          <a href="https://bulma.io" target="_blank">Bulma CSS</a> and
-          <a
-            class="is-size-7"
-            href="https://www.flaticon.com/free-icons/portfolio"
-            title="portfolio icons"
-            >Freepik - Flaticon</a
-          >.
-        </p>
-      </div>
-    </footer>
+      <footer class="footer has-text-centered py-5">
+        <div class="container has-text-grey is-size-7">
+          <p>&copy; 2026 Kristián Černák.</p>
+          <p>
+            Created by
+            <a href="https://bulma.io" target="_blank">Bulma CSS</a> and
+            <a
+              class="is-size-7"
+              href="https://www.flaticon.com/free-icons/portfolio"
+              title="portfolio icons"
+              >Freepik - Flaticon</a
+            >.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../main.js"></script>
   </body>
 </html>

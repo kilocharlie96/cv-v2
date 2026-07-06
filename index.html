@@ -30,309 +30,333 @@
   </head>
 
   <body>
-    <header>
-      <section class="hero is-link is-medium">
-        <div class="hero-head">
-          <div class="container navbar">
-            <div class="navbar-end p-4">
-              <div class="navbar-item">
+    <div id="app">
+      <header>
+        <section class="hero is-link is-medium">
+          <!-- DROPDOWN -->
+          <div class="hero-head">
+            <div class="container navbar">
+              <div class="navbar-start p-4">
+                <div class="dropdown">
+                  <div class="dropdown-trigger">
+                    <button
+                      class="button is-small is-light is-outlined"
+                      aria-haspopup="true"
+                      aria-controls="dropdown-menu is-small"
+                    >
+                      <span class="icon is-small">
+                        <i class="fas fa-globe"></i>
+                      </span>
+                      <span>SK</span>
+                      <span class="icon is-small arrow-icon">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item is-active"
+                        >Slovensky (SK)
+                      </a>
+                      <a href="./en/" class="dropdown-item"> English (EN) </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <h1 class="title is-1">Kristián Černák</h1>
+              <h2 class="subtitle is-3">Full-Stack Developer</h2>
+
+              <div class="buttons is-justify-content-center mt-4">
                 <a
-                  href="./en/"
-                  class="button is-small is-light is-outlined"
-                  hreflang="en"
+                  href="mailto:cernak.kiko@gmail.com"
+                  class="button is-link is-inverted is-outlined"
+                  aria-label="napísať email"
                 >
-                  <span class="icon is-small">
-                    <i class="fa-solid fa-arrows-rotate"></i>
+                  <span class="icon"><i class="fas fa-envelope"></i></span>
+                  <span>cernak.kiko@gmail.com</span>
+                </a>
+
+                <a
+                  href="tel:+421908606014"
+                  class="button is-link is-inverted is-outlined"
+                  aria-label="zatelefonovať"
+                >
+                  <span class="icon"><i class="fas fa-phone"></i></span>
+                  <span>+421 908 606 014</span>
+                </a>
+
+                <a
+                  href="https://github.com/kilocharlie96/"
+                  class="button is-link is-inverted is-outlined"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="prejsť na github"
+                >
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="./assets/CV_KristianCernak_SK.pdf"
+                  class="button is-link is-inverted is-outlined"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="stiahnuť životopis"
+                >
+                  <span class="icon">
+                    <i class="fas fa-download" aria-hidden="true"></i>
                   </span>
-                  <span>EN</span>
+                  <span>Otvoriť CV v PDF</span>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+      </header>
 
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title is-1">Kristián Černák</h1>
-            <h2 class="subtitle is-3">Full-Stack Developer</h2>
-
-            <div class="buttons is-justify-content-center mt-4">
-              <a
-                href="mailto:cernak.kiko@gmail.com"
-                class="button is-link is-inverted is-outlined"
-                aria-label="napísať email"
-              >
-                <span class="icon"><i class="fas fa-envelope"></i></span>
-                <span>cernak.kiko@gmail.com</span>
-              </a>
-
-              <a
-                href="tel:+421908606014"
-                class="button is-link is-inverted is-outlined"
-                aria-label="zatelefonovať"
-              >
-                <span class="icon"><i class="fas fa-phone"></i></span>
-                <span>+421 908 606 014</span>
-              </a>
-
-              <a
-                href="https://github.com/kilocharlie96/"
-                class="button is-link is-inverted is-outlined"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="prejsť na github"
-              >
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>GitHub</span>
-              </a>
-
-              <a
-                href="./assets/CV_KristianCernak_SK.pdf"
-                class="button is-link is-inverted is-outlined"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="stiahnuť životopis"
-              >
-                <span class="icon">
-                  <i class="fas fa-download" aria-hidden="true"></i>
-                </span>
-                <span>Otvoriť CV v PDF</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <section class="section">
-        <div class="container">
-          <div class="columns is-desktop">
-            <div class="column is-one-third-desktop">
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4 pb-2 bd-bottom">
-                    <i class="fas fa-user mr-2 text-primary"></i> O mne
-                  </h3>
-                  <p class="content pr-5 pl-5 pb-4">
-                    Som webový vývojár so skúsenosťami z reálnych projektov.
-                    Vývoj je mojím koníčkom, ktorému venujem svoj voľný čas.
-                    Tvorím čistý, responzívny kód a rýchlo sa prispôsobujem
-                    novým technológiám.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4 pb-2">
-                    <i class="fas fa-tools mr-2"></i> Zručnosti
-                  </h3>
-
-                  <div class="mb-3">
-                    <span class="tag is-link is-light m-1">Vue.js</span>
-                    <span class="tag is-link is-light m-1"
-                      >JavaScript (ES6)</span
-                    >
-                    <span class="tag is-link is-light m-1">HTML5 / CSS3</span>
-                    <span class="tag is-link is-light m-1">Bulma CSS</span>
-                    <span class="tag is-link is-light m-1">PHP</span>
-                    <span class="tag is-link is-light m-1">Laravel</span>
-                    <span class="tag is-link is-light m-1">Java</span>
-                    <span class="tag is-link is-light m-1">SpringBoot</span>
-                    <span class="tag is-link is-light m-1">MySQL</span>
-                    <span class="tag is-link is-light m-1">Linux/Unix</span>
-                    <span class="tag is-link is-light m-1">Git</span>
-                    <span class="tag is-link is-light m-1">REST API</span>
-                    <span class="tag is-link is-light m-1">JSON</span>
-                    <span class="tag is-link is-light m-1">Jira</span>
-                    <span class="tag is-link is-light m-1">Confluence</span>
-                  </div>
-
-                  <hr />
-
-                  <h4 class="subtitle is-5 mb-2">Jazykové znalosti</h4>
-                  <div class="field">
-                    <label class="label is-small mb-1"
-                      >Slovenský jazyk (Rodný)</label
-                    >
-                    <progress
-                      class="progress is-link is-small"
-                      value="100"
-                      max="100"
-                    >
-                      100%
-                    </progress>
-                  </div>
-                  <div class="field">
-                    <label class="label is-small mb-1"
-                      >Anglický jazyk (B2)</label
-                    >
-                    <progress
-                      class="progress is-link is-small"
-                      value="65"
-                      max="100"
-                    >
-                      65%
-                    </progress>
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="columns is-desktop">
+              <div class="column is-one-third-desktop">
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4 pb-2 bd-bottom">
+                      <i class="fas fa-user mr-2 text-primary"></i> O mne
+                    </h3>
+                    <p class="content pr-5 pl-5 pb-4">
+                      Som webový vývojár so skúsenosťami z reálnych projektov.
+                      Vývoj je mojím koníčkom, ktorému venujem svoj voľný čas.
+                      Tvorím čistý, responzívny kód a rýchlo sa prispôsobujem
+                      novým technológiám.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="column is-7-desktop">
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4">
-                    <i class="fas fa-briefcase mr-2"></i> Pracovné skúsenosti
-                  </h3>
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4 pb-2">
+                      <i class="fas fa-tools mr-2"></i> Zručnosti
+                    </h3>
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">
-                        Programátor CNC strojov
-                      </h4>
-                      <span class="tag is-info is-light">2025 - Súčasnosť</span>
+                    <div class="mb-3">
+                      <span class="tag is-link is-light m-1">Vue.js</span>
+                      <span class="tag is-link is-light m-1"
+                        >JavaScript (ES6)</span
+                      >
+                      <span class="tag is-link is-light m-1">HTML5 / CSS3</span>
+                      <span class="tag is-link is-light m-1">Bulma CSS</span>
+                      <span class="tag is-link is-light m-1">PHP</span>
+                      <span class="tag is-link is-light m-1">Laravel</span>
+                      <span class="tag is-link is-light m-1">Java</span>
+                      <span class="tag is-link is-light m-1">SpringBoot</span>
+                      <span class="tag is-link is-light m-1">MySQL</span>
+                      <span class="tag is-link is-light m-1">Linux/Unix</span>
+                      <span class="tag is-link is-light m-1">Git</span>
+                      <span class="tag is-link is-light m-1">REST API</span>
+                      <span class="tag is-link is-light m-1">JSON</span>
+                      <span class="tag is-link is-light m-1">Jira</span>
+                      <span class="tag is-link is-light m-1">Confluence</span>
                     </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">
-                      MATADOR Automotive Vráble, a.s.
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Písanie programov pre CNC stroje podľa technickej
-                          dokumentácie a výkresov
-                        </li>
-                        <li>
-                          Vedenie menšieho tímu programátorov a spolupráca s
-                          oddelením výroby
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">Frontend developer</h4>
-                      <span class="tag is-info is-light">2023 - 2024</span>
-                    </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">Freelancer</h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Tvorba webov a e-shopov s použitím HTML, CSS, Vue.js a
-                          HTMX
-                        </li>
-                        <li>Práca s REST API, JSON, Linux</li>
-                        <li>Tvorba grafických podkladov v Canve a Inkscape</li>
-                      </ul>
-                    </div>
-                  </div>
+                    <hr />
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">
-                        Backend Developer (Stáž)
-                      </h4>
-                      <span class="tag is-info is-light">2023 - 2023</span>
+                    <h4 class="subtitle is-5 mb-2">Jazykové znalosti</h4>
+                    <div class="field">
+                      <label class="label is-small mb-1"
+                        >Slovenský jazyk (Rodný)</label
+                      >
+                      <progress
+                        class="progress is-link is-small"
+                        value="100"
+                        max="100"
+                      >
+                        100%
+                      </progress>
                     </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">
-                      UNIQA Group Service Center Slovakia, spol. s r.o.
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Programovanie model-driven MS PowerApps aplikácií v
-                          agilnom SCRUM tíme
-                        </li>
-                        <li>CRUD operácie so SharePoint databázami</li>
-                        <li>Spolupráca s tímom vývojárov a testerov</li>
-                        <li>Tvorba dokumentácie v Confluence</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">Letecký mechanik</h4>
-                      <span class="tag is-info is-light">2018 - 2022</span>
-                    </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-3">
-                      Austrian Airlines Technik - Bratislava, s.r.o.
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>
-                          Vykonávanie opráv podľa predpísaných manuálov na
-                          kompozitných častiach lietadla
-                        </li>
-                        <li>Vedenie dokumentácie o opravách</li>
-                        <li>
-                          Spolupráca a účasť na stretnutiach s ďalšími tímami
-                        </li>
-                      </ul>
+                    <div class="field">
+                      <label class="label is-small mb-1"
+                        >Anglický jazyk (B2)</label
+                      >
+                      <progress
+                        class="progress is-link is-small"
+                        value="65"
+                        max="100"
+                      >
+                        65%
+                      </progress>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card mb-5">
-                <div class="card-content">
-                  <h3 class="title is-4">
-                    <i class="fas fa-graduation-cap mr-2"></i> Vzdelanie
-                  </h3>
+              <div class="column is-7-desktop">
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4">
+                      <i class="fas fa-briefcase mr-2"></i> Pracovné skúsenosti
+                    </h3>
 
-                  <div class="box">
-                    <div
-                      class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
-                    >
-                      <h4 class="title is-5 mb-1 mr-2">Mechatronika</h4>
-                      <span class="tag is-info is-light">2011 - 2016</span>
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">
+                          Programátor CNC strojov
+                        </h4>
+                        <span class="tag is-info is-light"
+                          >2025 - Súčasnosť</span
+                        >
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        MATADOR Automotive Vráble, a.s.
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Písanie programov pre CNC stroje podľa technickej
+                            dokumentácie a výkresov
+                          </li>
+                          <li>
+                            Vedenie menšieho tímu programátorov a spolupráca s
+                            oddelením výroby
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <h5 class="subtitle is-6 has-text-grey mb-0">
-                      Stredná odborná škola technická, Nitrianska 61, Šurany
-                    </h5>
-                    <div class="content is-size-6">
-                      <ul>
-                        <li>Programovanie CNC strojov</li>
-                        <li>Programovanie mikroprocesorov</li>
-                        <li>Technické kreslenie</li>
-                        <li>
-                          Elektrotechnické zameranie na silnoprúd a slaboprúd
-                        </li>
-                      </ul>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">Frontend developer</h4>
+                        <span class="tag is-info is-light">2023 - 2024</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        Freelancer
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Tvorba webov a e-shopov s použitím HTML, CSS, Vue.js
+                            a HTMX
+                          </li>
+                          <li>Práca s REST API, JSON, Linux</li>
+                          <li>
+                            Tvorba grafických podkladov v Canve a Inkscape
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">
+                          Backend Developer (Stáž)
+                        </h4>
+                        <span class="tag is-info is-light">2023 - 2023</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        UNIQA Group Service Center Slovakia, spol. s r.o.
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Programovanie model-driven MS PowerApps aplikácií v
+                            agilnom SCRUM tíme
+                          </li>
+                          <li>CRUD operácie so SharePoint databázami</li>
+                          <li>Spolupráca s tímom vývojárov a testerov</li>
+                          <li>Tvorba dokumentácie v Confluence</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">Letecký mechanik</h4>
+                        <span class="tag is-info is-light">2018 - 2022</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-3">
+                        Austrian Airlines Technik - Bratislava, s.r.o.
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>
+                            Vykonávanie opráv podľa predpísaných manuálov na
+                            kompozitných častiach lietadla
+                          </li>
+                          <li>Vedenie dokumentácie o opravách</li>
+                          <li>
+                            Spolupráca a účasť na stretnutiach s ďalšími tímami
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-5">
+                  <div class="card-content">
+                    <h3 class="title is-4">
+                      <i class="fas fa-graduation-cap mr-2"></i> Vzdelanie
+                    </h3>
+
+                    <div class="box">
+                      <div
+                        class="is-flex is-justify-content-between is-align-items-center is-flex-wrap-wrap"
+                      >
+                        <h4 class="title is-5 mb-1 mr-2">Mechatronika</h4>
+                        <span class="tag is-info is-light">2011 - 2016</span>
+                      </div>
+                      <h5 class="subtitle is-6 has-text-grey mb-0">
+                        Stredná odborná škola technická, Nitrianska 61, Šurany
+                      </h5>
+                      <div class="content is-size-6">
+                        <ul>
+                          <li>Programovanie CNC strojov</li>
+                          <li>Programovanie mikroprocesorov</li>
+                          <li>Technické kreslenie</li>
+                          <li>
+                            Elektrotechnické zameranie na silnoprúd a slaboprúd
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="footer has-text-centered py-5">
-      <div class="container has-text-grey is-size-7">
-        <p>&copy; 2026 Kristián Černák.</p>
-        <p>
-          Vytvorené pomocou
-          <a href="https://bulma.io" target="_blank">Bulma CSS</a> a
-          <a
-            class="is-size-7"
-            href="https://www.flaticon.com/free-icons/portfolio"
-            title="portfolio icons"
-            >Freepik - Flaticon</a
-          >.
-        </p>
-      </div>
-    </footer>
+      <footer class="footer has-text-centered py-5">
+        <div class="container has-text-grey is-size-7">
+          <p>&copy; 2026 Kristián Černák.</p>
+          <p>
+            Vytvorené pomocou
+            <a href="https://bulma.io" target="_blank">Bulma CSS</a> a
+            <a
+              class="is-size-7"
+              href="https://www.flaticon.com/free-icons/portfolio"
+              title="portfolio icons"
+              >Freepik - Flaticon</a
+            >.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,3 +1,13 @@
+/* Základný stav šípky - pridáme plynulý prechod */
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Stav, kedy je dropdown otvorený (.is-active) -> šípka sa otočí */
+.dropdown.is-active .arrow-icon {
+  transform: rotate(180deg);
+}
+
 li {
   max-width: 50ch !important;
 }
